@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<b-form @reset="onReset" v-if="show">
+			<h3>ID y las veces requeridas debe ser secuencial</h3>
 			<b-form-group id="input-group-1" label="ID de la Mision" label-for="input-1">
 				<b-form-input id="input-1" v-model="form.taskId" type="number" placeholder="Numero" required>
 				</b-form-input>
@@ -11,17 +12,17 @@
 				</b-form-input>
 			</b-form-group>
 
-			<b-form-group id="input-group-2" label="Cantidad de XP dada al terminar la mision" label-for="input-2">
-				<b-form-input id="input-2" v-model="form.rewardXP" type="number" placeholder="Numero" required>
+			<b-form-group id="input-group-3" label="Cantidad de XP dada al terminar la mision" label-for="input-3">
+				<b-form-input id="input-3" v-model="form.rewardXP" type="number" placeholder="Numero" required>
 				</b-form-input>
 			</b-form-group>
 
-			<b-form-group id="input-group-2" label="Título de la Mision" label-for="input-2">
-				<b-form-input id="input-2" v-model="form.taskTitle" placeholder="Texto" required></b-form-input>
+			<b-form-group id="input-group-4" label="Título de la Mision" label-for="input-4">
+				<b-form-input id="input-4" v-model="form.taskTitle" placeholder="Texto" required></b-form-input>
 			</b-form-group>
 
-			<b-form-group id="input-group-2" label="Descripcion de la Mision" label-for="input-2">
-				<b-form-input id="input-2" v-model="form.taskDescription" placeholder="Texto" required></b-form-input>
+			<b-form-group id="input-group-5" label="Descripcion de la Mision" label-for="input-5">
+				<b-form-input id="input-5" v-model="form.taskDescription" placeholder="Texto" required></b-form-input>
 			</b-form-group>
 
 			<hr />
@@ -142,7 +143,7 @@ export default {
 		border-color: #fff;
 	}
 
-	label {
+	label, h3, h2, small {
 		color: #fff;
 	}
 }
