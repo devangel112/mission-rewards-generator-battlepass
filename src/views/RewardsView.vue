@@ -1,5 +1,8 @@
 <template>
 	<div class="rewards">
+
+		<h1>ESTA FUNCIÓN AÚN NO ESTÁ TERMINADA</h1>
+
 		<b-form @submit="onSubmit" @reset="onReset" v-if="show">
 			<b-form-group id="input-group-1" label="ID de la Mision" label-for="input-1">
 				<b-form-input id="input-1" v-model="formReward.taskId" type="number" placeholder="Numero" required>
