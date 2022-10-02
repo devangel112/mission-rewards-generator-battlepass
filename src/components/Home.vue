@@ -136,6 +136,7 @@ export default {
 .home {
 	width: 50%;
 	margin: auto;
+	padding-bottom: 25px;
 
 	hr {
 		border-color: #fff;
